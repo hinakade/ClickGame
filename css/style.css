@@ -1,0 +1,18 @@
+
+.teki_box{
+color: rgb(33, 123, 243);
+width: 400px;
+  text-align: 
+  center;margin-left : auto ;
+   margin-right : auto ;
+}
+/*枠の中*/
+.waku{
+	padding: 20px; 
+	margin-bottom: 20px; 
+	border: 2px 
+	solid #333333;
+}
+.haikei{
+	background-image: url(../pic/haikei.jpg);
+}

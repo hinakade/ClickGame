@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>魔王との戦い</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/btn.css">
+</head>
+	<body　onKeyPress="Key_on(window.event.keyCode)">
+	<div class="haikei">
+	<div class = "teki_box">
+	<!-- 敵ゲージ -->
+	<meter id="pu2" value="10000" min="0" max="10000" low="100" high="600" optimum="10000">0push</meter>
+	<br>敵HP   
+	<output id="rpr">10000</output> 
+	<!-- 敵の写真をボタンにしました。 -->
+	<img src="../pic/boss.png" class= "teki_btn" input type="button" value="PUSH" onclick="pushButton()">
+	</div>
+</div>	  
+
+	<!-- 枠の中 -->
+<div class = "waku">
+  	<p>魔王を押してやっつけよう！！！</p>
+</div>
+<!-- bgm -->
+<video autoplay loop 
+  <sorce src="../bgm/Alien_is_coming.ogg" type="video/ogg">>
+</video>
+</body>
+	<script type="text/javascript" src="../js/tekihp.js"></script>
+	<!-- バッドエンドの時に強制移動する -->
+	<meta http-equiv="refresh"content="25200;bad_end.html">
+	<!-- memo
+	value：現在の敵のHP
+	low： 低い値の境界点を指定
+	high：高い値の境界点を指定
+	form：親の<form>のID名を呼び出して関連づける -->
+</html>
